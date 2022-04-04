@@ -3,7 +3,7 @@ This is a temporary repository to host source for paper: BFTrainer: Low-Cost Tra
 
 ![Software Arch](data/BFTrainer-arch.png)
 
-The BFTrainer's philosophy of design is **zero-cost** to jobs in the main scheduler of the supercomputer. It does mean that BFTrainer is the lowest priority to use resource but it does NOT mean that jobs run by BFTrainer will be slow because BFTrainer **relaxes** resource requirement and optimizes the way to utilize any fragmented resource. Depending on relative demand, BFTrainer may run slower or faster than main queue.
+The BFTrainer's philosophy of design is **zero-cost** to jobs in the main scheduler of the supercomputer. It does mean that BFTrainer is the lowest priority to use resource but it does NOT mean that jobs run by BFTrainer will be slow because BFTrainer **relaxes** resource requirement and optimizes the way to utilize any fragmented resource. Depending on relative demand, jobs submitted to BFTrainer may run slower or faster than submitting it to the main queue/scheduler.
 
 This prototype relies on [Elastic Horovod](https://horovod.readthedocs.io/en/stable/elastic_include.html) which minimizes user code change (only one line of change specific to BFTrainer). However, we realized it also (over)complicate BFTrainer, especially the job monitoring module. We are developping V2 based on pyTorch for better trade-off between user-code change effort and BFTrainer implementation. 
 
