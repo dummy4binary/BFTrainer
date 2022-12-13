@@ -1,5 +1,5 @@
 # BFTrainer
-This is a temporary repository to host source for paper: BFTrainer: Low-Cost Training of Neural Networks on Unfillable Supercomputer Nodes which is currently under double-blind review. This repo will be moved to our orginization account once review is done.
+This is a temporary repository to host source for paper: `CCGRID 2023 submission 2834` which is currently under double-blind review. This repo will be moved to our orginization account once review is done.
 
 ![Software Arch](data/BFTrainer-arch.png)
 
